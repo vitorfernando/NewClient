@@ -1,0 +1,28 @@
+server:
+    port: 9999
+    context-path: /client
+    
+#security:
+#    basic:
+#        enable: false
+#  oauth2:
+#    client:
+#      client-id: acme
+#      client-secret: acmesecret
+#      access-token-uri: https://server-oauth-teste.herokuapp.com/oauth/token
+#      user-authorization-uri: https://server-oauth-teste.herokuapp.com/oauth/authorize
+#    resource:
+#      user-info-uri: https://server-oauth-teste.herokuapp.com/me
+
+security:
+ basic:
+   enable: false
+ oauth2:
+   client:
+     client-id: acme
+     client-secret: acmesecret
+     access-token-uri: http://localhost:8090/oauth/token
+     user-authorization-uri: http://localhost:8090/oauth/authorize
+   resource:
+     user-info-uri: http://localhost:8090/tokenInfo
+     
